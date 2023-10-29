@@ -6,41 +6,41 @@ export default class Tooltip extends Component {
   constructor() {
     super();
     this.state = {
-      direction: "my-tooltiptext t-top",
-      content: "Hover Content",
+      direction: "tooltiptext tooltip-top",
+      content: "Tooltip Content",
     };
   }
 
-  //  function to change values if data change
+  //  function to change values if data change 
   handleTooltip = () => {
-    // setting content
+    // setting content of tooltip
     this.setState({
       content: this.props.content,
     });
 
-    // setting up direction according to direction
+    // setting up direction of tooltip
     if (this.props.direction === "top") {
       this.setState({
-        direction: "my-tooltiptext t-top",
+        direction: "tooltiptext tooltip-top",
       });
     } else if (this.props.direction === "right") {
       this.setState({
-        direction: "my-tooltiptext t-right",
+        direction: "tooltiptext tooltip-right",
       });
     } else if (this.props.direction === "left") {
       this.setState({
-        direction: "my-tooltiptext t-left",
+        direction: "tooltiptext tooltip-left",
       });
     } else {
       this.setState({
-        direction: "my-tooltiptext t-bottom",
+        direction: "tooltiptext tooltip-bottom",
       });
     }
   };
 
   render() {
     return (
-      // div for bidning componet for tooltip
+      // div for binding component for tooltip
       <div className="my-tooltip" onMouseEnter={this.handleTooltip}>
         {/* span for tooltip text */}
         <span className={this.state.direction}>{this.state.content}</span>

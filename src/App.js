@@ -38,11 +38,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Start :For Input Value to Change Direction & Content of Tooltip */}
+        {/* For Input Value to Change Direction & Content of Tooltip */}
         <div>
           {/* heading */}
           <div class="header-main-div"><p>Tool Tip</p></div>
           <div className="form-div">
+            {/* For Input Value to that will appear on Tooltip */}
             <label className="form-label">Enter Content of Tooltip</label>
             <input
               type="text"
@@ -51,22 +52,21 @@ export default class App extends Component {
             />
           </div>
           <div className="form-div">
+            {/* For Input Value to Change Direction & Content of Tooltip */}
             <label className="form-label">Enter Direction of Tooltip</label>
             <select
               className="form-select"
               onChange={this.handleDirectionInput}
             >
               <option value="top">Top</option>
+              <option value="bottom">Bottom</option>
               <option value="left">Left</option>
               <option value="right">Right</option>
-              <option value="bottom">Bottom</option>
             </select>
           </div>
         </div>
-        {/* End :For Input Value to Change Direction & Content of Tooltip */}
 
-        {/* This is Tooltip I created */}
-        {/* To use tooltip you have to bind component inside tooltip */}
+        {/* Tooltip */}
         <Tooltip content={this.state.content} direction={this.state.direction}>
           {/* calling button component */}
           <Button />

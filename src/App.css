@@ -1,9 +1,7 @@
-/* css for body */
 body{
   background: white;
 }
 
-/* css for app component */
 .App {
   display: flex;
   flex-direction: column;
@@ -35,7 +33,6 @@ body{
   margin: 10px 0;
 }
 
-/* css for button in button component */
 .button{
   cursor: pointer;
   width: 150px;
@@ -53,7 +50,6 @@ body{
   background-color: #0f7cf8;
 }
 
-/* css for h2 heading */
 h1{
   color: darkcyan;
 }
@@ -82,6 +78,8 @@ h1{
   margin: 5px 10px;
 }
 
+
+/* css for form control i.e. input for tooltip content */
 .form-control{
   width: 200px;
   border:none;
@@ -91,10 +89,17 @@ h1{
   font-weight:500;
 }
 
+/* css for form select*/
 .form-select{
   width : 200px;
   border-radius: 8px;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 5px 10px;
+  font-size: 16px;
+}
+
+/* css for form select option tags*/
+.form-select option{
+  font-size:16px;
 }
