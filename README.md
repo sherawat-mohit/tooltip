@@ -26,7 +26,7 @@ npm start
 http://localhost:3000
 ``` 
 
-## Steps to use Habit Tracker
+## Steps to use Tooltip
 1. User can provide the **content** that they wanted to display on the tooltip.
 2. User can select the **direction** in which they wanted the tooltip to appear.
 
