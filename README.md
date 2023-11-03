@@ -5,7 +5,7 @@
     1. Specify the **content** of the tooltip
     2. Specify the **direction** in which tooltip will appear
 
-## Steps for setting up habit tracker
+## Steps for setting up Tooltip
 1. Clone this repository using the following command:
 ```
 gh repo clone sherawat-mohit/tooltip
